@@ -30,6 +30,9 @@ function adicionarLinha(){ //Função de adicionar linha completa
         
         linhas += linha; //Nomeando a função "linhas" para funcionar no escopo global
     }
+
+    inputNomeContato.value = '';
+    inputNumeroContato.value = '';
 }
 
 function atualizaTabela(){ 
