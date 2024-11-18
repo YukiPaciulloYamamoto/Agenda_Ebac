@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- linksando o CSS com o HTML-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Pegando fonte do Google-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Usando icones da BoxIcons -->
+
+    <title>Agenda de Contatos</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Agenda de Contatos<i class='bx bx-message-dots'></i></h1>
+        </header>
+        <form id="form-contato">
+            <input type="text" id="nome-contato" required placeholder="Nome do Contato"> <!-- Nome da Contato -->
+            <input type="tel" id="numero-contato" required placeholder="Número Contato" min="10" max="14"> <!-- Numero do Contato -->
+            <button type="submit">Adicionar Contato</button> <!-- Botão para adicionar contato -->
+        </form>
+        <table cellspacing="0"> <!-- Cellspacing serve para remover a formatação "default" das tebelas -->
+            <thead> <!-- Inclusindo varias linhas | TableHead Pai -->
+                <tr> <!-- Tabela dentor de Thead | TableRow  -->
+                    <th> <!-- Tabela com valores | TableHead Filho -->
+                        Nome do Contato
+                    </th>
+                    <th>
+                        Número do Contato
+                    </th>
+                </tr>
+            </thead>
+            <tbody> <!-- Nescessario para colocar valores dentro da tabela | Tbody -->
+            </tbody>
+            <tfoot> <!-- Roda pé da tabela | TableFoot-->
+                <tr>
+                    <td>Yuki</td>
+                    <td>119****-****</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+
+</html>

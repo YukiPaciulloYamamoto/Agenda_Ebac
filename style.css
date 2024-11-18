@@ -1,0 +1,83 @@
+*{ /* Formatação total da pagina */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Varela Round", sans-serif;
+    background-color: #fff;
+}
+
+header h1 { /* Arrumando a fonte H1 do cabeçalho */
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+body { /* Mudando a cor do fundo e adicionando um espaço entre o topo da pagina */
+    background-color: #fff;
+    padding-top: 50px;
+}
+
+i { /* Mudando a cor do icone do cabeçalho*/
+    color: rgb(0, 167, 0);
+}
+
+.container { /* Aplicando estilo "universal" a todo o codigo */
+    max-width: 960px; /* A imagem vai se esticar até esse tamanho */
+    width: 100%; /* isso é para limitar, acompanhando o width acima, ou seja ele vai se esticar até 960px mesmo em monitores ultrawide */  
+    margin: 0 auto;
+    text-align: center;
+}
+
+form { /* Serve para o tamanho do botão comparado com os outros 2 (No caso ele da uma arrumadinha de uns 3px) */
+    display: flex;
+    max-width: 960px;
+    width: 100%;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+
+}
+
+form input { /* Formatando a area de input da tabela */
+    font-size: 18px;
+    background-color: #fff;
+    border-bottom: 2px solid #000;
+    padding: 6px;
+    width: 250px;
+}
+
+form button { /* Formatando o botão */
+    background-color: #009432;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    font-weight: bold;
+}
+
+table { /* Fazendo com que a tabela use 100% do tamanho proposto anteriormente no css "form" */
+    width: 100%; 
+}
+
+table th { /* Formatando o cabeçalho da tabela (o TH) */
+    border-bottom: 2px solid #000;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.Conectar {
+    color: white;
+}
+
+table td { /* Centralizando os itens da tabela */
+    padding: 8px 0;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(0,0,0,0.2); /* Aplicando uma linha na parte de baixo dos itens da tabela */
+}
+
+table td i {
+    color: rgb(48, 48, 148);
+    font-size: 25px;
+    cursor: pointer;
+}
